@@ -10,7 +10,7 @@
     width: 100px;
 }
 
-footer{
+footer {
     height: 60px;
     background-color: white;
     display: flex;
@@ -18,7 +18,7 @@ footer{
     margin-top: 100px;
 }
 
-.footer-ul{
+.footer-ul {
     width: 100%;
     display: flex;
     list-style: none;
@@ -32,50 +32,76 @@ footer{
 
 }
 
-.footer-ul li a{
+.footer-ul li a {
     text-decoration: none;
     color: black;
     font-family: sans-serif;
 }
 
+#some-box {
+    background: #fff;
+    padding: 40px 0px 80px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#some-box h1 {
+    text-align: center;
+}
+
+#some-box h3 {
+    font-size: 50px;
+}
+
+#some-box a {
+    color: #70BCB8;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+#some-box a:hover {
+    color: #8E7BB2;
+}
 
 
-
-.photoWithImage{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-
-    flex-wrap: wrap;
-    width: 1140px;
+article.row {
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
-    margin-top: 100px;
+    padding: 45px 0;
+    /* background-color: green; */
 }
 
-.leftContetnt {
-    width: 40%;
-    min-width: auto;
+article.row div {
+    width: 49.4%;
+    display: inline-block;
+    position: relative;
+    border: 1px solid white;
 }
 
-.leftContetnt img{
-    height: 100%;
-    border-radius: 50px 0 50px 0;
+.artical-img{
+    height: 250px;
+    width: 300px;
 }
 
-.rightContent{
-    min-width: auto;
-    width: 40%;
-    height: 100%;
-
+#subBtn {
+    margin-top: 25px;
 }
 
-#subBtn{
-    margin-top: 100px;
+.cardText {
+    border-radius: 10px;
 }
 
 
+@media(max-width:750px) {
 
+    /* This resizes the divs that contain your content to fill the width of the page so that they stack vertically */
+    article.row div {
+        min-width: 300px;
+        width: 90%;
+        margin: 0 5%;
+        text-align: center;
 
+    }
 
-
-
+}
